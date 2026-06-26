@@ -10,6 +10,8 @@ import javax.persistence.Entity;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class GerenteGeral extends Usuario {
-    //papel define permissões
+public class GerenteDeCompras extends Usuario{
+
+    @ManyToOne
+    private Filial filial; // na qual ele é gerente
 }
